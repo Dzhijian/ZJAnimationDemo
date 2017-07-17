@@ -15,6 +15,7 @@
 #define Margin 20
 
 #import "Masonry.h"
+#import "ZJCoreAnimationEffect.h"
 
 #define ScreenWidth self.view.bounds.size.width
 #define ScreenHeight self.view.bounds.size.height

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2FB0511F1CFF510097BCD0 /* ZJCoreAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FB0501F1CFF510097BCD0 /* ZJCoreAnimationEffect.m */; };
 		5DCA14A11F19032800795E22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14A01F19032800795E22 /* main.m */; };
 		5DCA14A41F19032800795E22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14A31F19032800795E22 /* AppDelegate.m */; };
 		5DCA14A71F19032900795E22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14A61F19032900795E22 /* ViewController.m */; };
@@ -18,6 +19,7 @@
 		5DCA14D41F1904DD00795E22 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14D31F1904DD00795E22 /* MainTableViewController.m */; };
 		5DCA14D81F1906B600795E22 /* ZJViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14D71F1906B600795E22 /* ZJViewAnimationController.m */; };
 		5DCA14DB1F19071200795E22 /* ZJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14DA1F19071200795E22 /* ZJBaseViewController.m */; };
+		5DCA14E41F19C8D600795E22 /* ZJPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14E31F19C8D600795E22 /* ZJPositionViewController.m */; };
 		750D6C15937D8B12EDDFC7E1 /* libPods-AnimationDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2724CF4280529DF1BB0550C2 /* libPods-AnimationDemoTests.a */; };
 		89449AFB08C5D5E11844AC62 /* libPods-AnimationDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0DA219440CE7D405246680 /* libPods-AnimationDemoUITests.a */; };
 		E235F1F90A444D578F7A103E /* libPods-AnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3128DAFEB1406C47B6D603 /* libPods-AnimationDemo.a */; };
@@ -46,6 +48,8 @@
 		2724CF4280529DF1BB0550C2 /* libPods-AnimationDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A72B3F0C41CD5892F07F8EA /* Pods-AnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5D0DA219440CE7D405246680 /* libPods-AnimationDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2FB04F1F1CFF510097BCD0 /* ZJCoreAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCoreAnimationEffect.h; sourceTree = "<group>"; };
+		5D2FB0501F1CFF510097BCD0 /* ZJCoreAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCoreAnimationEffect.m; sourceTree = "<group>"; };
 		5DCA149C1F19032700795E22 /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCA14A01F19032800795E22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DCA14A21F19032800795E22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		5DCA14D91F19071200795E22 /* ZJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBaseViewController.h; sourceTree = "<group>"; };
 		5DCA14DA1F19071200795E22 /* ZJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBaseViewController.m; sourceTree = "<group>"; };
 		5DCA14DC1F19091600795E22 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5DCA14E21F19C8D600795E22 /* ZJPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPositionViewController.h; sourceTree = "<group>"; };
+		5DCA14E31F19C8D600795E22 /* ZJPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPositionViewController.m; sourceTree = "<group>"; };
 		9D3128DAFEB1406C47B6D603 /* libPods-AnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30FDF2A5505559FECFB4CAA /* Pods-AnimationDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemoUITests/Pods-AnimationDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E098E047F28DA55231C54F16 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,7 +195,10 @@
 		5DCA14D51F19057700795E22 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				5DCA14DE1F19C88E00795E22 /* BaseAniamtion(基本动画) */,
 				5DCA14DD1F192A3200795E22 /* UIViewAnimation */,
+				5D2FB04F1F1CFF510097BCD0 /* ZJCoreAnimationEffect.h */,
+				5D2FB0501F1CFF510097BCD0 /* ZJCoreAnimationEffect.m */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -201,6 +210,15 @@
 				5DCA14D71F1906B600795E22 /* ZJViewAnimationController.m */,
 			);
 			name = UIViewAnimation;
+			sourceTree = "<group>";
+		};
+		5DCA14DE1F19C88E00795E22 /* BaseAniamtion(基本动画) */ = {
+			isa = PBXGroup;
+			children = (
+				5DCA14E21F19C8D600795E22 /* ZJPositionViewController.h */,
+				5DCA14E31F19C8D600795E22 /* ZJPositionViewController.m */,
+			);
+			name = "BaseAniamtion(基本动画)";
 			sourceTree = "<group>";
 		};
 		8C2C031BC62CC88020A61DB3 /* Frameworks */ = {
@@ -500,6 +518,8 @@
 				5DCA14D41F1904DD00795E22 /* MainTableViewController.m in Sources */,
 				5DCA14A71F19032900795E22 /* ViewController.m in Sources */,
 				5DCA14A41F19032800795E22 /* AppDelegate.m in Sources */,
+				5DCA14E41F19C8D600795E22 /* ZJPositionViewController.m in Sources */,
+				5D2FB0511F1CFF510097BCD0 /* ZJCoreAnimationEffect.m in Sources */,
 				5DCA14DB1F19071200795E22 /* ZJBaseViewController.m in Sources */,
 				5DCA14A11F19032800795E22 /* main.m in Sources */,
 				5DCA14D81F1906B600795E22 /* ZJViewAnimationController.m in Sources */,

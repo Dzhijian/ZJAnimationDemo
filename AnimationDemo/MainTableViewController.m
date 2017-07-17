@@ -8,6 +8,8 @@
 
 #import "MainTableViewController.h"
 #import "ZJViewAnimationController.h"
+#import "ZJPositionViewController.h"
+
 
 @interface MainTableViewController ()
 
@@ -30,16 +32,50 @@
 #pragma mark - Table view data source
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"123");
-    switch (indexPath.row) {
-        case 0:
-        {
-            ZJViewAnimationController *position = [[ZJViewAnimationController alloc]init];
-            [self.navigationController pushViewController:position animated:YES];
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                ZJViewAnimationController *position = [[ZJViewAnimationController alloc]init];
+                [self.navigationController pushViewController:position animated:YES];
+            }
+            default:
+                break;
         }
-            break;
-            
-        default:
-            break;
+        
+    }else if (indexPath.section == 1){
+        switch (indexPath.row) {
+            case 0:
+            {
+                ZJPositionViewController *position = [[ZJPositionViewController alloc]init];
+                [self.navigationController pushViewController:position animated:YES];
+
+            }
+                break;
+            case 1:
+            {
+                
+            }
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                
+                break;
+            case 4:
+                
+                break;
+            case 5:
+                
+                break;
+            case 6:
+                
+                break;
+                
+            default:
+                break;
+        }
     }
 }
 
