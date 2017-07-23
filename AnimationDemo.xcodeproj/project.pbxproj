@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D2FB0511F1CFF510097BCD0 /* ZJCoreAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FB0501F1CFF510097BCD0 /* ZJCoreAnimationEffect.m */; };
+		5DBD31BC1F24FBD100DDAA42 /* ZJOpacityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBD31BB1F24FBD100DDAA42 /* ZJOpacityViewController.m */; };
+		5DBD31BF1F24FD8B00DDAA42 /* ZJScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBD31BE1F24FD8B00DDAA42 /* ZJScaleViewController.m */; };
 		5DCA14A11F19032800795E22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14A01F19032800795E22 /* main.m */; };
 		5DCA14A41F19032800795E22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14A31F19032800795E22 /* AppDelegate.m */; };
 		5DCA14A71F19032900795E22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA14A61F19032900795E22 /* ViewController.m */; };
@@ -50,6 +52,10 @@
 		5D0DA219440CE7D405246680 /* libPods-AnimationDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2FB04F1F1CFF510097BCD0 /* ZJCoreAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCoreAnimationEffect.h; sourceTree = "<group>"; };
 		5D2FB0501F1CFF510097BCD0 /* ZJCoreAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCoreAnimationEffect.m; sourceTree = "<group>"; };
+		5DBD31BA1F24FBD100DDAA42 /* ZJOpacityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJOpacityViewController.h; sourceTree = "<group>"; };
+		5DBD31BB1F24FBD100DDAA42 /* ZJOpacityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJOpacityViewController.m; sourceTree = "<group>"; };
+		5DBD31BD1F24FD8B00DDAA42 /* ZJScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScaleViewController.h; sourceTree = "<group>"; };
+		5DBD31BE1F24FD8B00DDAA42 /* ZJScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScaleViewController.m; sourceTree = "<group>"; };
 		5DCA149C1F19032700795E22 /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCA14A01F19032800795E22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DCA14A21F19032800795E22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -217,6 +223,10 @@
 			children = (
 				5DCA14E21F19C8D600795E22 /* ZJPositionViewController.h */,
 				5DCA14E31F19C8D600795E22 /* ZJPositionViewController.m */,
+				5DBD31BA1F24FBD100DDAA42 /* ZJOpacityViewController.h */,
+				5DBD31BB1F24FBD100DDAA42 /* ZJOpacityViewController.m */,
+				5DBD31BD1F24FD8B00DDAA42 /* ZJScaleViewController.h */,
+				5DBD31BE1F24FD8B00DDAA42 /* ZJScaleViewController.m */,
 			);
 			name = "BaseAniamtion(基本动画)";
 			sourceTree = "<group>";
@@ -521,8 +531,10 @@
 				5DCA14E41F19C8D600795E22 /* ZJPositionViewController.m in Sources */,
 				5D2FB0511F1CFF510097BCD0 /* ZJCoreAnimationEffect.m in Sources */,
 				5DCA14DB1F19071200795E22 /* ZJBaseViewController.m in Sources */,
+				5DBD31BC1F24FBD100DDAA42 /* ZJOpacityViewController.m in Sources */,
 				5DCA14A11F19032800795E22 /* main.m in Sources */,
 				5DCA14D81F1906B600795E22 /* ZJViewAnimationController.m in Sources */,
+				5DBD31BF1F24FD8B00DDAA42 /* ZJScaleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

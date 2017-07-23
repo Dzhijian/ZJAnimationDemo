@@ -7,8 +7,13 @@
 //
 
 #import "MainTableViewController.h"
+
 #import "ZJViewAnimationController.h"
 #import "ZJPositionViewController.h"
+#import "ZJOpacityViewController.h"
+#import "ZJScaleViewController.h"
+
+
 
 
 @interface MainTableViewController ()
@@ -54,10 +59,17 @@
                 break;
             case 1:
             {
+                ZJOpacityViewController *opacity = [[ZJOpacityViewController alloc]init];
+                [self.navigationController pushViewController:opacity animated:YES];
                 
             }
                 break;
             case 2:
+            {
+                ZJScaleViewController *scale = [[ZJScaleViewController alloc]init];
+                [self.navigationController pushViewController:scale animated:YES];
+                
+            }
                 
                 break;
             case 3:

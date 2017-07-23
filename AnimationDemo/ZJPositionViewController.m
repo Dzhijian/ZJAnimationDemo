@@ -8,7 +8,8 @@
 
 #import "ZJPositionViewController.h"
 
-@interface ZJPositionViewController ()
+@interface ZJPositionViewController ()<CAAnimationDelegate>
+
 @property(nonatomic, strong) UIImageView *imageView;
 @end
 
@@ -50,33 +51,90 @@
     switch (sender.tag) {
         case 0:
         {
-//            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-//            animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth /2 -50 , 80)];
-            [ZJCoreAnimationEffect showAnimationType:@"cube" withSubType:kCATransitionFromTop duration:2.0 timingFunction:kCAMediaTimingFunctionLinear view:self.imageView];
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+            animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2, 210)];
+            animation.toValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2 , 60)];
+            animation.duration = 1.0f;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+            [_imageView.layer addAnimation:animation forKey:@"positionAnimation"];
+
         }
             break;
         case 1:
         {
-            [ZJCoreAnimationEffect animationFlipFromTop:_imageView];
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+            animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2, 210)];
+            animation.toValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2 , 350)];
+            animation.duration = 1.0f;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+            [_imageView.layer addAnimation:animation forKey:@"positionAnimation"];
         }
             break;
         case 2:
-            
+        {
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+            animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2, 210)];
+            animation.toValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2 - 120 , 210)];
+            animation.duration = 1.0f;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+            [_imageView.layer addAnimation:animation forKey:@"positionAnimation"];
+        }
             break;
         case 3:
-            
+        {
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+            animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2, 210)];
+            animation.toValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth/2 + 120 , 210)];
+            animation.duration = 1.0f;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+            [_imageView.layer addAnimation:animation forKey:@"positionAnimation"];
+        }
             break;
         case 4:
-            
+        {
+            CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+            NSValue *value0 = [NSValue valueWithCGPoint:CGPointMake(50, 70)];
+            NSValue *value1 = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth - ViewWH/2, 80)];
+            NSValue *value2 = [NSValue valueWithCGPoint:CGPointMake(50, 260)];
+            NSValue *value3 = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth - ViewWH, 360)];
+            animation.values = [NSArray arrayWithObjects:value0,value1,value2,value3, nil];
+            animation.duration = 3.0f;
+            animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+            animation.delegate =  self; //设置代理，可以检测动画的开始和结束
+            [_imageView.layer addAnimation:animation forKey:@"keyFrameAnimation"];
+
+        }
             break;
         case 5:
+        {
             
+            CAKeyframeAnimation *anima = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+            UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(ScreenWidth/2-50, ScreenHeight/2-50-64, 150, 150)];
+            anima.path = path.CGPath;
+            anima.duration = 2.0f;
+            [_imageView.layer addAnimation:anima forKey:@"pathAnimation"];
+            
+        }
             break;
             
         default:
             break;
     }
 
+}
+
+
+#pragma mark - CAAnimationDelegate
+
+- (void)animationDidStart:(CAAnimation *)anim{
+
+    NSLog(@"动画开始--->%s",__func__);
+    
+}
+
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    NSLog(@"动画end--->%s",__func__);
 }
 
 - (void)didReceiveMemoryWarning {
